@@ -39,10 +39,10 @@ $('#el').spin('flower', 'red');
     // CommonJS
     factory(require('jquery'), require('spin'))
   }
-  else if (typeof define == 'function' && define.amd) {
-    // AMD, register as anonymous module
-    define(['jquery', 'spin'], factory)
-  }
+  // else if (typeof define == 'function' && define.amd) {
+  //   // AMD, register as anonymous module
+  //   define(['jquery', 'spin'], factory)
+  // }
   else {
     // Browser globals
     if (!window.Spinner) throw new Error('Spin.js not present')
