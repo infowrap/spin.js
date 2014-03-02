@@ -5,13 +5,13 @@
 (function(root, factory) {
 
   /* CommonJS */
-  if (typeof exports == 'object')  module.exports = factory()
+  //if (typeof exports == 'object')  module.exports = factory()
 
   /* AMD module */
-  else if (typeof define == 'function' && define.amd) define(factory)
+  //else if (typeof define == 'function' && define.amd) define(factory)
 
   /* Browser global */
-  else root.Spinner = factory()
+  root.Spinner = factory()
 }
 (this, function() {
   "use strict";

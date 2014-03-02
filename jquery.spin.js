@@ -35,19 +35,19 @@ $('#el').spin('flower', 'red');
 
 (function(factory) {
 
-  if (typeof exports == 'object') {
+  //if (typeof exports == 'object') {
     // CommonJS
-    factory(require('jquery'), require('spin'))
-  }
-  else if (typeof define == 'function' && define.amd) {
+  //   factory(require('jquery'), require('spin'))
+  // }
+  //else if (typeof define == 'function' && define.amd) {
     // AMD, register as anonymous module
-    define(['jquery', 'spin'], factory)
-  }
-  else {
+  //   define(['jquery', 'spin'], factory)
+  // }
+  // else {
     // Browser globals
     if (!window.Spinner) throw new Error('Spin.js not present')
     factory(window.jQuery, window.Spinner)
-  }
+  // }
 
 }(function($, Spinner) {
 
